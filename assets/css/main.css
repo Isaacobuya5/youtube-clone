@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+header {
+  background: #ffffff;
+  width: 100vw;
+  height: 50px;
+  position: relative;
+  padding: 0px 20px;
+  clear: both;
+}
+
+.left-nav {
+  float: left;
+}
+
+.hambuger {
+  position: absolute;
+  color: #606060;
+  top: 15px;
+}
+
+.youtube-icon {
+  position: absolute;
+  left: 60px;
+  top: -15px;
+}
+
+.right-menu {
+  float: right;
+  padding: 0 30px;
+  height: 50px;
+  color: white;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  /* vertical-align: middle; */
+}
+
+.video-icon,
+.notification-icon,
+.other-apps-icon {
+  display: inline-block;
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* vertical-align: middle; */
+}
+
+.video-icon {
+    position: relative;
+}
+
+.video-icon i,
+.notification-icon i,
+.other-apps-icon i {
+  color: #606060;
+  font-size: 20px;
+}
+
+.plus {
+    color: #ffffff;
+    font-style: bolder;
+    font-size: 14px;
+    position: absolute;
+    right: 8px;
+}
+
+.accounts-icon {
+  width: 30px;
+  height: 30px;
+  background: #008979;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* margin-top: 10px; */
+}
+
+.search-form {
+    display: inline-block;
+    width: 40%;
+    height: 80px;
+    position: absolute;
+    left: 300px;
+    padding-top: 12px;
+    
+}
+
+.search-form input {
+    width: 86%;
+    height: 25px; 
+    border: 2px solid #FAFAFA;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 10px;
+    outline: rgba(0, 0, 0, .2) 1.7px solid;
+    box-shadow: 1px rgb(0, 0, 0, .5) inset;
+}
+.search-form button {
+  width: 12%;
+  height: 25px;
+  background: #F0F0F0;
+  border: none;
+  outline: rgba(0, 0, 0, .2) 1.7px solid;
+  color: #626262;
+  margin-left: -3.5px;
+}
