@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Youtube Clone Website</title>
   </head>
   <body>
@@ -113,29 +117,106 @@
 
       <!--Search bar-->
       <div class="search-form">
-          <input type="search" name="searchbox" id="search-box" placeholder="Search">
-          <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        <input
+          type="search"
+          name="searchbox"
+          id="search-box"
+          placeholder="Search"
+        />
+        <button><i class="fa fa-search" aria-hidden="true"></i></button>
       </div>
       <div class="right-menu">
         <!-- video icon-->
         <div class="video-icon">
-            <span class="plus">+</span>
-        <i class="fa fa-video-camera" aria-hidden="true"></i>
+          <span class="plus">+</span>
+          <i class="fa fa-video-camera" aria-hidden="true"></i>
         </div>
         <!--Other apps icon-->
         <div class="other-apps-icon">
-            <i class="fa fa-th" aria-hidden="true"></i>
+          <i class="fa fa-th" aria-hidden="true"></i>
         </div>
         <!--Notification bell-->
         <div class="notification-icon">
-            <i class="fa fa-bell " aria-hidden="true"></i>
+          <i class="fa fa-bell " aria-hidden="true"></i>
         </div>
         <!--Account icon-->
         <div class="accounts-icon">
           <span class="account_name">Z</span>
         </div>
-        
       </div>
     </header>
+    <!--Min container that houses the main section and the aside section-->
+    <div class="main-container">
+      <!--Main section that houses the video, description and the content section -->
+      <section class="main-section">
+        <div class="video-section">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/mcTQBkO2TfI"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="description">
+          <span class="video_name">
+            KHALIGRAPH JONES - INSTAGRAM GIRLS (OFFICIAL VIDEO)
+          </span>
+          <div class="meta-info">
+            <span class="viewership">
+              65,745 views . Premiered 5 hours ago
+            </span>
+            <!--- displaying the other information such as share buttons -->
+            <div class="other-options">
+
+<!--start of like and dislike button-->
+              <div class="like-dislike-icons">
+              <!--Like icons-->
+              <button class="btn">
+                <!-- Dislike svg icon-->
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; width: 25; height: 25;fill: #909090;"><g class="style-scope yt-icon">
+                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
+                </g></svg>
+                <span class="save-text">7.2K</span>
+              </button>             
+                            <!---Dislikes icon-->
+                            <button class="btn">
+                              <!-- Dislike svg icon-->
+                              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; width: 25px; height: 25px;fill: #909090;"><g class="style-scope yt-icon">
+                                <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path>
+                              </g></svg>
+                              <span class="save-text">92</span>
+                            </button>
+
+                            </div>
+              <!---Share icon-->
+              <button class="btn share-icon-btn ">
+                <!-- S-->
+                <i class="fa fa-share" aria-hidden="true"></i>
+                <span class="save-text">SHARE</span>
+              </button>
+              <!-- SAVE TEXT-->
+              <button class="btn save-label">
+                <!-- SAVE ICON-->
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none;width: 25px; height: 25px;fill: #909090;"><g class="style-scope yt-icon">
+                  <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z" class="style-scope yt-icon"></path>
+                </g></svg>
+                <span class="save-text">SAVE</span>
+              </button>
+              <button class="btn elipsis-icon-btn"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                <!-- <i class="fa fa-ellipsis-h" aria-hidden="true"></i> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- The left section that houses the chat bar and the aside videos -->
+      <section class="left-section">
+        <div class="chat-replay">
+          <span class="show-chat">Show Chat Replay</span>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
